@@ -17,11 +17,11 @@ function App() {
   const { userDetails } = useContext(UserContext);
   const user = JSON.parse(localStorage.getItem("user"));
 
-  useEffect(() => {
-    if (!user) {
-      navigate("/login");
-    }
-  }, [user]);
+  // useEffect(() => {
+  //   if (!user) {
+  //     navigate("/login");
+  //   }
+  // }, [user]);
 
   return (
     <div className={darkMode ? "app dark" : "app"}>
