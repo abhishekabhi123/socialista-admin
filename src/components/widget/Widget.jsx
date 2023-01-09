@@ -34,6 +34,7 @@ const Widget = ({ type }) => {
       .catch((e) => {
         // localStorage.removeItem("user");
         // window.location.replace('/login')
+        console.log(e);
       });
   }, []);
 
